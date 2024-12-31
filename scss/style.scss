@@ -9,9 +9,9 @@
 
 
 // Create SCSS variables
-$white: #ffffff;
-$black: #000000;
-$primary: #3b5d50;
+$black: black;
+$green: green;
+$primary: gray;
 $secondary: #f9bf29;
 $dark: #2f2f2f;
 $light: #dce5e4;
@@ -79,7 +79,7 @@ a {
 			}
 			a {
 				font-weight: 500;
-				color: $white!important;
+				color: $black!important;
 				opacity: .5;
 				transition: .3s all ease;
 				position: relative;
@@ -152,7 +152,7 @@ a {
 	}
 	h1 {
 		font-weight: 700;
-		color: $white;
+		color: $black;
 		margin-bottom: 30px;
 
 		@media (min-width: $xxl) {
@@ -160,7 +160,7 @@ a {
 		}
 	}
 	p {
-		color: rgba($white, .5);
+		color: rgba($black, .5);
 		margin-botom: 30px;
 	}
 	.hero-img-wrap {
@@ -213,11 +213,11 @@ a {
 	font-weight: 600;
 	padding: 12px 30px;
 	border-radius: 30px;
-	color: $white;
+	color: $black;
 	background: $dark;
 	border-color: $dark;
 	&:hover {
-		color: $white;
+		color: $black;
 		background: darken($dark, 5%);
 		border-color: darken($dark, 5%);
 	}
@@ -245,10 +245,10 @@ a {
 	&.btn-white-outline {
 		background: transparent;
 		border-width: 2px;
-		border-color: rgba($white, .3);
+		border-color: rgba($black, .3);
 		&:hover {
-			border-color: rgba($white, 1);
-			color: $white;
+			border-color: rgba($black, 1);
+			color: $black;
 		}
 	}
 }
@@ -552,7 +552,7 @@ a {
 			transition: .3s all ease;
 			&:hover {
 				background: $primary;
-				color: $white;
+				color: $black;
 			}
 		}
 		.prev {
@@ -650,7 +650,7 @@ a {
 // Footer Section
 .footer-section {
 	padding: 80px 0;
-	background: $white;
+	background: $black;
 	.relative {
 		position: relative;
 	}
@@ -748,7 +748,7 @@ a {
 				border-radius: 50%;
 				&:hover {
 					background: $primary;
-					color: $white;
+					color: $black;
 				}
 			}
 		}
@@ -803,7 +803,7 @@ a {
 		text-align: center;
 		background: $primary;
 		margin-right: 20px;
-		color: $white;
+		color: $black;
 	}
 }
 
