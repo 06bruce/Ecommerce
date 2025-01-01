@@ -1,8 +1,6 @@
 /*
-* Template Name: UntreeStore
-* Template Author: Untree.co
-* Author URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
+* website Name: SmartDotComElectronics
+* Website Author: Bruce Nshuti
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
@@ -183,13 +181,16 @@ a.more {
   margin-bottom: 30px;
 }
 
+
 .hero-img-wrap{
   margin-top: 5rem;
   margin-bottom: 5rem;
+  margin-left: 10%;
   display: flex;
+  border: 20px;
   justify-content: center;
-  align-items: center;
-  opacity: 100%;
+  /* align-items: center; */
+  opacity: 70%;
 }
 .hero .hero-img-wrap,
 .hero .hero-img-wrap img {
@@ -197,8 +198,8 @@ a.more {
   top: 0px;
   right: 0px;
   z-index: 2;
-  max-width: 790px;
-  left: -10px;
+  max-width: 490px;
+  left: -5px;
 }
 
 @media (min-width: 768px) {
@@ -861,6 +862,7 @@ a.more {
 
 .footer-section .sofa-img img {
   max-width: 380px;
+  border: 4%;
 }
 
 .footer-section .links-wrap {
