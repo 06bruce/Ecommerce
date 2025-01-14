@@ -2119,4 +2119,3 @@ var tns = (function () {
   };
   return aa;
 })();
-//# sourceMappingURL=../sourcemaps/tiny-slider.js.map

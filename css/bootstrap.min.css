@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-/*!
- * Bootstrap v5.1.3 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root {
     --bs-blue: blue; /* Blue */
     --bs-indigo: deepblue; /* Deep Blue (closer to indigo) */
@@ -410,7 +404,7 @@ select:disabled {
 [type=reset],
 [type=submit],
 button {
-    -webkit-appearance: button
+    --webkit-appearance: button
 }
 
 [type=button]:not(:disabled),
@@ -471,7 +465,7 @@ legend+* {
 
 [type=search] {
     outline-offset: -2px;
-    -webkit-appearance: textfield
+    --webkit-appearance: textfield
 }
 
 ::-webkit-search-decoration {
@@ -639,7 +633,7 @@ progress {
 
 .img-fluid {
     max-width: 100%;
-    height: auto
+    height: auto;
 }
 
 .img-thumbnail {
@@ -676,7 +670,10 @@ progress {
     padding-right: var(--bs-gutter-x, .75rem);
     padding-left: var(--bs-gutter-x, .75rem);
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+}
+.container{
+    background-color: var(blue, green);
 }
 
 @media (min-width:576px) {
@@ -2602,8 +2599,8 @@ textarea.form-control-lg {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact
+    --webkit-print-color-adjust: exact;
+    --color-adjust: exact;
 }
 
 .form-check-input[type=checkbox] {
