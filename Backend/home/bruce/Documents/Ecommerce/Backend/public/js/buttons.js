@@ -14,6 +14,7 @@ async function scrapeProduct(element) { // Accept the element as an argument
     const imageUrl = imageElement ? imageElement.src : "Image Not Found";
 
     return { title, price, imageUrl };
+    const phoneNumber = 250798922605;
 }
 
 function generateWhatsAppMessage(productDetails, phoneNumber) {
