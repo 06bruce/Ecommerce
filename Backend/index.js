@@ -58,7 +58,7 @@ app.post('/send-email', async (req, res) => {
     try {
         const result = await emailService.send(newEmail);
         if (result.success) {
-            res.redirect('/public/thankyou.html'); // Redirect on success
+            res.redirect('/thankyou.html'); // Updated redirect path
         } else {
             res.status(500).send('Error sending email. Please try again later.');
         }
@@ -73,7 +73,7 @@ app.post('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.get('/thankyou', (req, res) => {
+app.get('/thankyou.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'thankyou.html'));
 });
 

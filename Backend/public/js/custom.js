@@ -1,22 +1,22 @@
 
-//   const whatsappButtons = document.querySelectorAll('.whatsapp-button');
-//   const phoneNumber = "250789495980";
+  const whatsappButtons = document.querySelectorAll('.whatsapp-button');
+  const phoneNumber = "250789495980";
 
-//   whatsappButtons.forEach(button => {
-//     button.addEventListener('click', function(event) {
-//       event.preventDefault(); // Prevent default link behavior
+  whatsappButtons.forEach(button => {
+    button.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent default link behavior
 
-//       const product = this.closest('.product');
-//       const productTitle = product.querySelector('.product-title').textContent.trim();
-//       const message = `I want to buy the ${productTitle}`;
-//       const encodedMessage = encodeURIComponent(message);
+      const product = this.closest('.product-image');
+      const productTitle = product.querySelector('.product-title').textContent.trim();
+      const message = `I want to place an order ${productTitle}, ${product}`;
+      const encodedMessage = encodeURIComponent(message);
 
-//       const whatsappLink = `https://wa.me/${phoneNumber}/?text=${encodedMessage}`;
+      const whatsappLink = `https://wa.me/${phoneNumber}/?text=${encodedMessage}`;
 
-//       // Correct way to open the link:
-//       window.open(whatsappLink, '_blank'); 
-//     });
-//   });
+      // Correct way to open the link:
+      window.open(whatsappLink, '_blank'); 
+    });
+  });
 
 
 (function() {
