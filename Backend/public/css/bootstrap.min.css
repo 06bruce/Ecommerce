@@ -631,6 +631,12 @@ progress {
     content: "— "
 }
 
+#img-fluid1{
+    margin-left: 2rem;
+    width: 25rem;
+    height: 24rem;
+}
+
 .img-fluid {
     max-width: 100%;
     height: auto;

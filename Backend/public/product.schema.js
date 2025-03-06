@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", () => {
 
-   const product =   [
+document.addEventListener("DOMContentLoaded", () => {
+    const product =   [
         {
             "id": "product1",
             "name": "Lights for Laoptops as well as for  Smartphone",
@@ -210,13 +210,13 @@ document.addEventListener("DOMContentLoaded", () => {
             "image": "images-job/Product 38.jpeg",
             "description": "Haino Tecko Smt Watch",
         }, 
-        {
-            "id": "product31",
-            "name": "Haino Tecko Digital Smart Watch ",
-            "image": "images-job/Product 38.jpeg",
-            "price": "Frw 45 000",
-            "description": "",
-        },
+        // {
+        //     "id": "product31",
+        //     "name": "Haino Tecko Digital Smart Watch ",
+        //     "image": "images-job/Product 38.jpeg",
+        //     "price": "Frw 45 000",
+        //     "description": "",
+        // },
         {
             "id": "product32",
             "name": "Haino Tecko Wrist Round Smart Watches",
@@ -231,13 +231,13 @@ document.addEventListener("DOMContentLoaded", () => {
             "price": "58 000 Frw",
             "descriptoin": ""
         },
-        {
-            "id": "product34",
-            "name": "Haino Tecko Smart Brown Watch",
-            "image": "mages-job/product412.png",
-            "price": "59 000 Frw",
-            "description": ""
-        },
+        // {
+        //     "id": "product34",
+        //     "name": "Haino Tecko Smart Brown Watch",
+        //     "image": "mages-job/product412.png",
+        //     "price": "59 000 Frw",
+        //     "description": ""
+        // },
         {
             "id": "product35",
             "name": "Haino Tecko Smart White Watch",
@@ -258,61 +258,45 @@ document.addEventListener("DOMContentLoaded", () => {
         // }
     ]
 
+    const productList = document.getElementById('product-list');
 
-
-if(typeof module !== "undefined"){
-module.exports = product;
-}
-product.forEach(product => {
-
-
-})
-
-const productList = document.getElementById('product-lst')
-//generate products dynamically 
-
-products.forEach(product => {
-    const productHTML = `
-     <div class="col-12 col-md-4 col-lg-3 mb-5">
-                <div class="product-item" data-id="${product.id}">
-                    <img src="${product.image}" class="img-fluid product-image">
-                    <h3 class="product-title">${product.name}</h3>
-                    <strong class="product-price">${product.price}</strong>
-                    <span class="icon-cross">
-                        <img src="images/cross.svg" class="img-fluid">
-                    </span>
-                </div>
-                <button class="whatsapp-button">Order on WhatsApp</button>
+    // Generate product HTML
+    let productsHTML = '';
+    product.forEach(product => {
+        productsHTML += `
+        <div class="col-12 col-md-4 col-lg-3 mb-5">
+            <div class="product-item" data-id="${product.id}" style="background-color: #e0f2e0; border-radius: 9px; padding: 4px; font-size: 15px"> 
+                <img src="${product.image}" class="img-fluid product-image" alt="${product.name}">
+                <h3 class="product-title" style="color: blue;">${product.name}</h3>
+                <strong class="product-price">${product.price}</strong>
+                ${product.description ? `<p class="product-description">${product.description}</p>` : ''}
+               
             </div>
-            `;
+            <button class="whatsapp-button" style=" color: blue; border-radius: 9px; background-color:lightGreen " ;>Order on WhatsApp</button>
+        </div>`;
+    });
 
-    producList.innerHTML +=productHTML;
-})
+    productList.innerHTML = productsHTML;
 
-document.querySelectorAll('.whatsapp-button').forEach(button => {
-    button.addEventListener('click', e =>{
-        e.preventDefault();
+    // WhatsApp Button Click Handler
+    document.querySelectorAll('.whatsapp-button').forEach(button => {
+        button.addEventListener('click', e => {
+            e.preventDefault();
+            const productItem = button.closest('.col-12');
+            const productId = productItem.querySelector('.product-item').getAttribute('data-id');
+            const productTitle = productItem.querySelector('.product-title').textContent;
+            const productPrice = productItem.querySelector('.product-price').textContent;
+            const productImage = productItem.querySelector('.product-image').src;
 
-        const productItem = button.closest('.col-12');
-        const productId = productItem.querySelector('.product-item')?.getAttribute('data-id') || "Unknown Id";
-        const productTitle = productItem?.querySelector('.product-title')?.textContent.trim() || "Unknown Product";
-        const productImage = productItem?.querySelector('.product-image')?.src || "";
-        const productPrice = productItem?.querySelector('.product-price')?.textContent.trim() || "Unknown Price";
 
-        let message = `I'd like to order:\n`;
-        message += `🆔 Product ID: ${encodeURIComponent(productId)}\n`;
-        message += `📌 Name: ${encodeURIComponent(productTitle)}\n`;
-        message += `💰 Price: ${encodeURIComponent(productPrice)}`;
-            if (productImage) {
-                message += `\n🖼 Image: ${encodeURIComponent(productImage)}`;
-            }
+            const message = encodeURIComponent(
+                `I'd like to order:\n
+                📌 Name: ${productTitle}\n
+                💰 Price: ${productPrice}\n
+                🖼 Image: ${productImage}`
+            );
 
-            const phoneNumber = '250798922605';
-            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
-
-            console.log("Generated URL:", whatsappUrl);
-            window.open(whatsappUrl, '_blank');
-
-    })
-  })
-})
+            window.open(`https://wa.me/250798922605?text=${message}`, '_blank');
+        });
+    });
+});

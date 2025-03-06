@@ -90,6 +90,7 @@ body {
   background-color: #ffffff; /* white */
 }
 
+
 a {
   text-decoration: none;
   -webkit-transition: .3s all ease;
@@ -264,6 +265,11 @@ a.more {
   /* align-items: center; */
   opacity: 70%;
 }
+#im-fluid1{
+  width: 26rem;
+  height: 25rem;
+}
+
 .hero .hero-img-wrap,
 .hero .hero-img-wrap img {
   position: relative;
