@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "id": "product28",
             "name": "Haino Tecko Digital Smart Watch -White",
             "image": "images-job/Product 38.jpeg",
-            "price": "$243.00",
+            "price": "60 000 Frw",
             "description": "Haino Tecko Digital Smart Watch -White"
         },
         {
@@ -207,6 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             "id": "product30",
             "name": "Haino Tecko smart Digitar smart Watch",
+            "price": "60 000 Frw",
             "image": "images-job/Product 38.jpeg",
             "description": "Haino Tecko Smt Watch",
         }, 
@@ -252,10 +253,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "price": "25 000Frw"
         }
 
-        // {
-        //    "id": "37",
-        //    "name": ""
-        // }
+     
     ]
 
     const productList = document.getElementById('product-list');
@@ -267,7 +265,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="col-12 col-md-4 col-lg-3 mb-5">
             <div class="product-item" data-id="${product.id}" style="background-color: #e0f2e0; border-radius: 9px; padding: 4px; font-size: 15px"> 
                 <img src="${product.image}" class="img-fluid product-image" alt="${product.name}">
-                <h3 class="product-title" style="color: blue;">${product.name}</h3>
+                <h3 class="product-title" style="color: blue; font-size: 18px">${product.name}</h3>
                 <strong class="product-price">${product.price}</strong>
                 ${product.description ? `<p class="product-description">${product.description}</p>` : ''}
                
@@ -290,13 +288,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
             const message = encodeURIComponent(
-                `I'd like to order:\n
-                📌 Name: ${productTitle}\n
-                💰 Price: ${productPrice}\n
-                🖼 Image: ${productImage}`
+                `I'd like to order:
+                 Name: ${productTitle}
+                 Price: ${productPrice}
+                 Image: ${productImage}`
             );
 
-            window.open(`https://wa.me/250798922605?text=${message}`, '_blank');
+            window.open(`https://wa.me/250785657398?text=${message}`, '_blank');
         });
     });
 });
