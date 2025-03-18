@@ -197,6 +197,45 @@ document.addEventListener("DOMContentLoaded", () => {
             "price": "60 000 Frw",
             "description": "Haino Tecko Digital Smart Watch -White"
         },
+
+        {
+            "id": "product37",
+            "name": "JMARY USB MICROPHONE",
+            "image": "images-job/IMG_9092.JPG",
+            "price": "60 000 Frw",
+            "description": "MC PW 10"
+        },
+    
+        {
+            
+                "id": "product38",
+                "name": "JMARY USB MICROPHONE",
+                "image": "images-job/IMG_9091.JPG",
+                "price": "60 000 Frw",
+                "description": "MC PW 7"
+    
+        },
+
+        {
+                "id": "product39",
+                "name": "JMARY USB MICROPHONE",
+                "image": "images-job/IMG_9090.JPG",
+                "price": "60 000 Frw",
+                "description": "MC PW 8"
+    
+      
+        },
+
+        {
+            
+            "id": "product40",
+            "name": "JMARY USB MICROPHONE",
+            "image": "images-job/IMG_9093.JPG",
+            "price": "60 000 Frw",
+            "description": "MC PW 12"
+
+    },
+
         {
             "id": "product29",
             "name": "Haino Tecko Wrist Round Smart Watches",
@@ -204,6 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "price": "Fr 44 000",
             "description": "Smart Watch",
         },
+
         {
             "id": "product30",
             "name": "Haino Tecko smart Digitar smart Watch",

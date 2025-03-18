@@ -2,6 +2,25 @@
 * website Name: SmartDotComElectronics
 * Website Author: Bruce Nshuti
 */
+
+/* 
+.alert {
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+} */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 body {
