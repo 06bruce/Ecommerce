@@ -33,42 +33,42 @@ document.addEventListener("DOMContentLoaded", () => {
             "id": "product5",
             "name": "Ring Lights for Smart Phones",
             "image": "images-job/Product 3.jpeg",
-            "price": "$25.00",
+            "price": "20 ,000 Frw",
             "description": "Ring Lights for Smartphones"
         },
         {
             "id": "product6",
             "name": "M11 Professional camera lights",
             "image": "images-job/Product 11.jpeg",
-            "price": "$243.00",
+            "price": "19 ,000 Frw",
             "description": "M11 Professional camera lights"
         },
         {
             "id": "product7",
             "name": "Gimbal Stailizer Easy Shooting",
             "image": "images-job/Product 19.jpeg",
-            "price": "$15.00",
+            "price": "150 000 Frw",
             "description": "Gimbal Stabilizer Easy Shooting"
         },
         {
             "id": "product8",
             "name": "Video Making Kit",
             "image": "images-job/Product 20.jpeg",
-            "price": "$25.00",
+            "price": "30 ,000 Frw",
             "description": "Video Making Kit"
         },
         {
             "id": "product9",
             "name": "Single ring light",
             "image": "images-job/Product 7.jpeg",
-            "price": "$243.00",
+            "price": "10 ,000 Frw",
             "description": "Single ring light"
         },
         {
             "id": "product10",
             "name": "Double Ring Lights with stick",
             "image": "images-job/Product 8.jpeg",
-            "price": "$15.00",
+            "price": "10 000 Frw",
             "description": "Double Ring Lights with stick"
         },
         {
@@ -89,42 +89,42 @@ document.addEventListener("DOMContentLoaded", () => {
             "id": "product13",
             "name": "Camera Lights",
             "image": "images-job/Product 11.jpeg",
-            "price": "$243.00",
+            "price": "10 ,000 Frw",
             "description": "Camera Lights"
         },
         {
-            "id": "product14",
+            "id": "product14", 
             "name": "Selfie Stick",
             "image": "images-job/Product 12.jpeg",
-            "price": "$243.00",
+            "price": "40 000 Frw",
             "description": "Selfie Stick"
         },
         {
             "id": "product15",
             "name": "SX9 MicroPhones",
             "image": "images-job/Product 14.jpeg",
-            "price": "$243.00",
+            "price": "30 000 Frw",
             "description": "SX9 MicroPhones"
         },
         {
             "id": "product16",
             "name": "Head ights For SmartPhones",
             "image": "images-job/Product 15.jpeg",
-            "price": "$243.00",
+            "price": "10 ,000 frw",
             "description": "Head lights For SmartPhones"
         },
         {
             "id": "product17",
             "name": "Professional MiCrophones",
             "image": "images-job/Product 16.jpeg",
-            "price": "$243.00",
+            "price": "40 000 frw",
             "description": "Professional MiCrophones"
         },
         {
             "id": "product18",
             "name": "Dual Omni-Directional Lavalier Mic BY-M1DM",
             "image": "images-job/Product 4.jpeg",
-            "price": "$243.00",
+            "price": "40 000Frw",
             "description": "Dual Omni-Directional Lavalier Mic BY-M1DM"
         },
         {
@@ -152,29 +152,22 @@ document.addEventListener("DOMContentLoaded", () => {
             "id": "product22",
             "name": "K35 Microphone",
             "image": "images-job/Product 22.jpeg",
-            "price": "$20 000",
+            "price": "20 000 Frw",
             "description": "K35 Microphone"
         },
         {
             "id": "product23",
             "name": "Universal Cardoid Microphone",
             "image": "images-job/Product 23.jpeg",
-            "price": "$243.00",
+            "price": "40 000 Frw",
             "description": "Universal Cardoid Microphone"
         },
         {
             "id": "product24",
             "name": "Lavalier Microphone",
             "image": "images-job/Product 25.jpeg",
-            "price": "$243.00",
+            "price": "35 000 Frw",
             "description": "Lavalier Microphone"
-        },
-        {
-            "id": "product25",
-            "name": "Universal Cardoid MIcrophone BY-MM1",
-            "image": "images-job/Product 26.jpeg",
-            "price": "$243.00",
-            "description": "Universal Cardoid MIcrophone BY-MM1"
         },
         {
             "id": "product26",
@@ -251,13 +244,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "image": "images-job/Product 38.jpeg",
             "description": "Haino Tecko Smt Watch",
         }, 
-        // {
-        //     "id": "product31",
-        //     "name": "Haino Tecko Digital Smart Watch ",
-        //     "image": "images-job/Product 38.jpeg",
-        //     "price": "Frw 45 000",
-        //     "description": "",
-        // },
+       
         {
             "id": "product32",
             "name": "Haino Tecko Wrist Round Smart Watches",
@@ -272,13 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "price": "58 000 Frw",
             "descriptoin": ""
         },
-        // {
-        //     "id": "product34",
-        //     "name": "Haino Tecko Smart Brown Watch",
-        //     "image": "mages-job/product412.png",
-        //     "price": "59 000 Frw",
-        //     "description": ""
-        // },
+         
         {
             "id": "product35",
             "name": "Haino Tecko Smart White Watch",
