@@ -22,6 +22,20 @@
     <link href="css/tiny-slider.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <title>Smart Dot Com Electronics</title>
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+     <script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "gT60YTtZTr13MUmBz",
+  });
+})();
+</script> 
+
+<script src="script.js"></script>
+
   </head>
 
   <body>
@@ -546,10 +560,11 @@
                 ><span>Subscribe to Newsletter</span>
               </h3>
 
-              <form action="/submit-email" method="POST" class="row g-3" id="subscriptionForm">
+              <form action="#" method="" class="row g-3" id="subscriptionForm">
               
                 <div class="col-auto">
                   <input
+                  id="name"
                      required="Enter your name"
                     type="text"
                     class="form-control"
@@ -558,6 +573,7 @@
                 </div>
                 <div class="col-auto">
                   <input
+                  id="email"
                      required="Enter you email"
                     type="email"
                     class="form-control"
@@ -566,7 +582,7 @@
                 </div>
                 <div class="col-auto">
 
-                  <button class="btn btn-primary">
+                  <button  onclick="sendMail()" class="btn btn-primary">
 										<span class="fa fa-paper-plane"></span>
 									</button>
 
